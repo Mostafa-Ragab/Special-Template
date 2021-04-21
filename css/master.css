@@ -1,0 +1,43 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* start landing page */
+.landing-page {
+  min-height: 100vh;
+  background-image: url(/images/1.jpg);
+  background-size: cover;
+  position: relative;
+}
+.landing-page .Overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.landing-page .header-area {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+}
+.landing-page .header-area .logo {
+  width: 300px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+.landing-page .header-area .links {
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  padding-left: 0;
+  padding-right: 20px;
+  font-size: 15px;
+}
+.landing-page .header-area .links li {
+  display: inline-block;
+  padding-left: 10px;
+}
+/* end landing page */
