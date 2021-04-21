@@ -1,3 +1,7 @@
+:root {
+  --main-color: #ff9800;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -39,5 +43,36 @@ body {
 .landing-page .header-area .links li {
   display: inline-block;
   padding-left: 10px;
+}
+.landing-page .header-area .links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.landing-page .header-area .links li a:hover,
+.landing-page .header-area .links li a.active {
+  color: var(--main-color);
+}
+.introduction-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+.introduction-text h1 {
+  font-size: 34px;
+  margin: 0 0 12px;
+  font-weight
+}
+
+.introduction-text h1 span {
+  color: var(--main-color);
+}
+.introduction-text p {
+  line-height: 1.6;
+  font-size: 20px;
 }
 /* end landing page */
