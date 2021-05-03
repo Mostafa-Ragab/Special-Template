@@ -69,8 +69,9 @@ body {
 }
 
 .introduction-text h1 span {
-  color: var(--main-color);
+    color:var(--main-color);
 }
+
 .introduction-text p {
   line-height: 1.6;
   font-size: 20px;
