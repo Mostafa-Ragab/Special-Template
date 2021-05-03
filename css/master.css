@@ -69,7 +69,7 @@ body {
 }
 
 .introduction-text h1 span {
-    color:var(--main-color);
+    color: var(--main-color);
 }
 
 .introduction-text p {
@@ -77,3 +77,26 @@ body {
   font-size: 20px;
 }
 /* end landing page */
+
+/* start settings-box */
+.settings-box{
+  position: fixed;
+  background-color: #fff;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+}
+.settings-box .fa-gear{
+  position: absolute;
+    top: 100px;
+    background-color: #fff;
+    right: -30px;
+    padding: 8px 0;
+    width: 30px;
+    text-align: center;
+    cursor:pointer ;
+}
+/* End settings-box */
