@@ -1,3 +1,10 @@
+// Check if theere are color in local storage
+const mainColor = localStorage.getItem('color-option')
+
+if(mainColor !== null) {
+    document.documentElement.style.setProperty('--main-color', mainColor)
+}
+
 // toggle spin class on Item
 document.querySelector('.toggle-settings .fa-gear').onclick = function () {
     //toggle class  fa-spin for rottation onself
@@ -7,15 +14,28 @@ document.querySelector('.toggle-settings .fa-gear').onclick = function () {
 }
 // Switch colors
  const colorsLi = document.querySelectorAll(".colors-list li")
-//  Loop On All List
 
+//  Loop On All List
 .forEach(li => {
     // Click on Every list Items
     li.addEventListener('click', (e) => {
         
         // Set Color On Root
         document.documentElement.style.setProperty('--main-color',e.target.dataset.color)
+
+        // Set Color on local storage
+        localStorage.setItem('color-option', e.target.dataset.color)
+        // remove active class from all Children
+
+        e.target.parentElement.querySelectorAll('.active').forEach(el => {
+            el.classList.remove('active')
+        })
+        // Add Active on Self
+        e.target.classList.add('active')
     })
+
+    
+
 });
 const landingPage = document.querySelector('.landing-page')
 
