@@ -3,6 +3,17 @@ const mainColor = localStorage.getItem('color-option')
 
 if(mainColor !== null) {
     document.documentElement.style.setProperty('--main-color', mainColor)
+
+    // remove Active Class from all Children
+    document.documentElement.querySelectorAll('.colors-list li').forEach(el => {
+        el.classList.remove('active')
+
+        // add active class on element with data color === amin color
+        if(el.dataset.color === mainColor){
+    
+            el.classList.add('active')
+        }
+    })
 }
 
 // toggle spin class on Item

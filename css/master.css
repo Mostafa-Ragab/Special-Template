@@ -108,6 +108,12 @@ body {
   font-size: 20px;
 
 }
+.container{
+  width: 1170px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /* start colors box */
 .settings-box .colors-box{
@@ -149,3 +155,36 @@ padding: 0;
 }
 /* End colors box */
 /* End settings-box */
+
+/* start about us */
+.about-us{
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.about-us .info-box {
+  flex: 1;
+}
+
+.about-us .info-box h2 {
+  font-weight: bold;
+  color: var(--main-color);
+  font-size: 30px;
+}
+
+.about-us .info-box p {
+  line-height: 1.8;
+  color: #767676;
+  margin: 0 0 10px;
+
+}
+.about-us .imge-box {
+  flex: 1;
+}
+.about-us .imge-box img{
+  width: 250px;
+
+
+}
+/* End about us */
+
