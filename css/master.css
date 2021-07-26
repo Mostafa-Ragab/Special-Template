@@ -108,4 +108,44 @@ body {
   font-size: 20px;
 
 }
+
+/* start colors box */
+.settings-box .colors-box{
+  padding: 20px;
+}
+.settings-box .colors-box .colors-list {
+text-align: center;
+list-style: none;
+padding: 0;
+
+
+}
+.settings-box .colors-box .colors-list li {
+  width: 20px;
+  height: 20px;
+  color: #333;
+  border-radius: 50%;
+  opacity: .5;
+  cursor: pointer;
+  display: inline-block;
+}
+.settings-box .colors-box .colors-list li.active{
+  opacity: 1;
+}
+.settings-box .colors-box .colors-list li:first-child {
+  background-color: goldenrod;
+}
+.settings-box .colors-box .colors-list li:nth-child(2) {
+  background-color: green;
+}
+.settings-box .colors-box .colors-list li:nth-child(3) {
+  background-color: red;
+}
+.settings-box .colors-box .colors-list li:nth-child(4) {
+  background-color: blue;
+}
+.settings-box .colors-box .colors-list li:nth-child(5) {
+  background-color: orangered;
+}
+/* End colors box */
 /* End settings-box */
